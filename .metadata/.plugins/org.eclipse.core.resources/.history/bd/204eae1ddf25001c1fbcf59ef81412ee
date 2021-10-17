@@ -1,0 +1,5 @@
+package com.belling.openfeign;
+
+public class CustomerServiceRestClient {
+
+}

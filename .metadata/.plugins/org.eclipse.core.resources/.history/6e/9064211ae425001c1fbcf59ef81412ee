@@ -1,0 +1,47 @@
+package com.belling.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.belling.dto.InvoiceRequestDto;
+import com.belling.dto.InvoiceResponseDto;
+import com.belling.mappers.InvoiceMapper;
+import com.belling.repositories.InvoiceRepository;
+
+public class InvoiceServiceImpl implements InvoiceService {
+
+	@Autowired
+	InvoiceRepository invoiceRepository;
+	
+	@Autowired
+	InvoiceMapper invoiceMapper;
+	
+	@Autowired
+	CustomerServiceRestClient customerRestClient;
+	
+	@Override
+	public List<InvoiceResponseDto> getInvoices() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public InvoiceResponseDto save(InvoiceRequestDto customer) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public InvoiceResponseDto getInvoice(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<InvoiceResponseDto> getInvoicesByCustomerId(String customerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

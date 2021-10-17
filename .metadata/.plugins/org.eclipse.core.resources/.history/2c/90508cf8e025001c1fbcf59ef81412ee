@@ -1,0 +1,33 @@
+package com.belling.dto;
+
+import java.math.BigDecimal;
+import java.util.Date;
+
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+public class InvoiceRequestDto {
+
+
+	private BigDecimal amount;
+	private String customerID;
+
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+
+	public String getCustomerID() {
+		return customerID;
+	}
+
+	public void setCustomerID(String customerID) {
+		this.customerID = customerID;
+	}
+
+
+
+}

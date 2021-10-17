@@ -1,0 +1,10 @@
+package com.belling.openfeign;
+
+public class CustomerServiceRestClient {
+
+    @GetMapping(path="/api/customers/{id}")
+    Customer customerById(@PathVariable String id);
+
+    @GetMapping(path="/api/customers")
+    List<Customer> customers();
+}

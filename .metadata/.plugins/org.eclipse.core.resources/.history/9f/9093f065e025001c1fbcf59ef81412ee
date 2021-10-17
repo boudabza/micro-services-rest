@@ -1,0 +1,12 @@
+package com.belling.repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.belling.entites.Customer;
+import com.belling.entites.Invoice;
+
+public interface InvoiceRepository extends JpaRepository<Invoice, String> {
+	List<Customer> findByClientId(String clientId);
+}

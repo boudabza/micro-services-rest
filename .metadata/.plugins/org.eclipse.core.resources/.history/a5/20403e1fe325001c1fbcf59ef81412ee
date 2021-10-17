@@ -1,0 +1,16 @@
+package com.belling.services;
+
+import java.util.List;
+
+import com.belling.dto.InvoiceResponseDto;
+
+
+
+
+public interface InvoiceService {
+
+    List<InvoiceResponseDto> getInvoices();
+    CustomerResponseDTO save(CustomerRequestDTO customer);
+	CustomerResponseDTO getCustomer(String id);
+
+}

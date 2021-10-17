@@ -1,0 +1,5 @@
+package com.belling.web;
+
+public class InvoiceRestAPI {
+
+}
